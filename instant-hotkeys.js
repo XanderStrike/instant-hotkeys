@@ -1,3 +1,9 @@
+// instant-hotkeys.js
+//    Alex Standke
+//    November 2015
+//
+// https://github.com/XanderStrike/instant-hotkeys
+
 function InstantHotkeys() {
   var bindings = [];
 
