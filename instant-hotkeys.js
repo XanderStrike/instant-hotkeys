@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function instantHotkeys() {
   var bindings = [];
   $("a[class^='hk-']").each(function(i) {
     var shortcode = $(this).attr('class').replace('hk-', '')
@@ -21,6 +21,4 @@ $(document).ready(function() {
       input.focus();
     });
   });
-});
-
-
+}
