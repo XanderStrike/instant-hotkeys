@@ -4,7 +4,7 @@ _Precooked and dehydrated for your enjoyment._
 
 Instant hotkeys automatically binds keys in any webpage using only css classes. Check it, yo.
 
-Click a link with A:
+Click a link or button with A:
 
     <a href='#' class='hk-a'>Click me!</a>
 

@@ -1,6 +1,6 @@
 function instantHotkeys() {
   var bindings = [];
-  $("a[class^='hk-']").each(function(i) {
+  $("a[class^='hk-'], button[class^='hk-']").each(function(i) {
     var shortcode = $(this).attr('class').replace('hk-', '')
     var link = $(".hk-"+shortcode)[0]
     label = $(link).attr('data-hk-label') || $(".hk-"+shortcode).text();
