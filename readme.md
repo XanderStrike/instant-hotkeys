@@ -10,7 +10,7 @@ Click a link or button with A:
 
 Focus in on a field with Shift+F:
 
-    <input href='#' class='hk-shift-f' placeholder='Search!'>
+    <input class='hk-shift-f' placeholder='Search!'>
 
 Don't forget to include the requirements:
 
