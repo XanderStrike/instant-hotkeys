@@ -5,7 +5,7 @@ function instantHotkeys() {
     var link = $(".hk-"+shortcode)[0]
     label = $(link).attr('data-hk-label') || $(".hk-"+shortcode).text();
 
-    console.log("Binding "+shortcode+" to "+label);
+    bindings.push([shortcode,label]);
     $(document).bind('keydown', shortcode.replace('-', '+'), function() {
       link.click();
     });
@@ -16,9 +16,17 @@ function instantHotkeys() {
     var input = $(".hk-"+shortcode)[0]
     label = $(input).attr('data-hk-label') || $(".hk-"+shortcode).attr('placeholder');
 
-    console.log("Binding "+shortcode+" to "+label);
+    bindings.push([shortcode,label]);
     $(document).bind('keyup', shortcode.replace('-', '+'), function() {
       input.focus();
     });
   });
+
+  var showBindings = function() {
+    $.each(bindings, function() {
+      console.log(this[0]+' bound to '+this[1])
+    });
+  }
+
+  showBindings();
 }
