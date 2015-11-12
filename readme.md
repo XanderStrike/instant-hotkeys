@@ -29,6 +29,6 @@ Run this bad boy:
 
 Pow.
 
-Read the script for more info and options.
+See `demo.html` for all possibilities. Power users should read the script.
 
 

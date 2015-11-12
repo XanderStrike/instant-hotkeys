@@ -1,7 +1,7 @@
 function InstantHotkeys() {
   var bindings = [];
 
-  // Bind all clickable elements, buttons and links
+  // Bind all clickable elements: buttons and links
   this.bindClicks = function() {
     $("a[class^='hk-'], button[class^='hk-']").each(function(i) {
       var shortcode = $(this).attr('class').replace('hk-', '')
@@ -15,9 +15,9 @@ function InstantHotkeys() {
     });
   }
 
-  // Bind all focusable elements, inputs
+  // Bind all focusable elements: inputs, textareas, selects
   this.bindFocus = function() {
-    $("input[class^='hk-']").each(function(i) {
+    $("input[class^='hk-'], textarea[class^='hk-'], select[class^='hk-']").each(function(i) {
       var shortcode = $(this).attr('class').replace('hk-', '')
       var input = $(".hk-"+shortcode)[0]
       label = $(input).attr('data-hk-label') || $(".hk-"+shortcode).attr('placeholder');
