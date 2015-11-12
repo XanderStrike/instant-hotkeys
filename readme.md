@@ -2,7 +2,7 @@
 
 _Precooked and dehydrated for your enjoyment._
 
-Instant hotkeys automatically binds keys in any webpage using only css classes. Check it, yo.
+Instant hotkeys uses jquery.hotkeys to automatically bind keys in any webpage using only css classes. Check it, yo.
 
 Click a link or button with A:
 
@@ -11,8 +11,6 @@ Click a link or button with A:
 Focus in on a field with Shift+F:
 
     <input href='#' class='hk-shift-f' placeholder='Search!'>
-
-Other basic actions are coming!
 
 Don't forget to include the requirements:
 
@@ -24,10 +22,13 @@ Run this bad boy:
 
     <script>
       $(document).ready(function() {
-        instantHotkeys();
+        hotkeys = new InstantHotkeys();
+        hotkeys.bindAll();
       });
     </script>
 
 Pow.
+
+Read the script for more info and options.
 
 

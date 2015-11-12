@@ -20,6 +20,8 @@
 <script src='instant-hotkeys.js'></script>
 <script>
   $(document).ready(function() {
-    instantHotkeys();
+    hk = new InstantHotkeys();
+    hk.bindAll();
+    hk.showBindings();
   });
 </script>
